@@ -1,5 +1,5 @@
 import Link from "next/link";
-const groups=[
+const groups: [string, string[]][] = [
  ["Preventive & general care",["Comprehensive examinations & X-rays","Individualized treatment planning","Teeth cleaning","Fluoride therapy","Periodontal disease treatment","Oral cancer screening","Tooth-colored fillings","Pediatric dentistry"]],
  ["Restorative care",["Root canal therapy","Crowns & bridges","Dental implants","Extractions","Wisdom tooth extractions","Dentures","Teeth grinding treatment"]],
  ["Cosmetic care",["Veneers","Invisalign","Teeth whitening"]],
