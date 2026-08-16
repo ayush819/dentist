@@ -1,0 +1,9 @@
+const doctors=[
+["Dr. Sushmita Bhardwaj, DDS","Founder / General & Cosmetic Dentistry","Dr. Bhardwaj emphasizes gentle care, clear explanations and personalized treatment. She earned her DDS from the Medical College of Virginia and completed general-practice residency training in Fresno. Her professional memberships include the ADA, California Dental Association and San Francisco Dental Society."],
+["Dr. Bianca Miguel, DDS","General Dentistry","Dr. Miguel trained at UC Davis and UCSF, followed by general-practice residency training at USC. She focuses on compassionate, comfortable care and building long-term relationships with patients."],
+["Dr. Joanna Man, DDS","General Dentistry","Dr. Man earned her DDS with honours from the University of Toronto and completed advanced general-practice training serving public-health patients. She values clear communication and a relaxed experience."],
+["Dr. Monica Armendariz, DDS","General Dentistry","A UCSF-trained dentist motivated by communication and education, Dr. Armendariz focuses on helping patients understand their oral-health choices."],
+["Dr. Edrick Tan, DDS","General Dentistry","A University of the Pacific graduate, Dr. Tan focuses on personalized treatment and patient education."],
+["Dr. Kristen Spies, DDS","General Dentistry","A UCSF graduate with additional residency training, Dr. Spies emphasizes compassionate care, quality work and explaining treatment clearly."]
+];
+export default function Doctors(){return <main className="inner"><div className="innerHero"><p className="eyebrow">MEET YOUR DENTISTS</p><h1>People first.<br/><i>Dentistry second.</i></h1><p>A team built around expertise, empathy and the belief that patients deserve to understand what is happening in their care.</p></div><div className="doctorList">{doctors.map((d,i)=><article key={d[0]}><div className="doctorAvatar">0{i+1}</div><div><p className="eyebrow">{d[1]}</p><h2>{d[0]}</h2><p>{d[2]}</p></div></article>)}</div></main>}
